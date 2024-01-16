@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">    <title>Número de alumno - Nombre de alumno</title>
+
+    <style>
+        body {
+            font-size: 1em;
+            line-height: 1;
+            max-width: 800px;
+            box-sizing: border-box;
+            margin: 1em auto;
+            padding: 3em;
+            border: 1px solid #ccc;
+            font-family: 'Roboto';
+            line-height: 1.6;
+        }
+
+        header .titulo-libro {
+            font-family: 'Roboto Slab';
+            font-size: 32px;
+        }
+
+        header .autor-libro {
+            font-family: 'Lobster';
+            font-size: 32px;
+        }
+
+        header .editorial {
+            font-family: 'Roboto';
+            font-size: medium;
+            font-weight: 100;
+            text-transform: uppercase;
+            margin-top: 50px;
+            color: #666;
+        }
+
+        .seccion-categorias {
+            margin-top: 2.5em;
+            margin-bottom: 3em;
+        }
+
+        .categoria {
+            color: white;
+            background-color: #666;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        .seccion-portada {
+            float: left;
+        }
+
+        .seccion-precio {
+            float: left;
+            border-left: 5px solid #333;
+            margin-top: 0;
+            margin-left: 3em;
+            padding: 0 0 0 1em;
+            width: max-content;
+            max-width: 400px;
+        }
+
+        .precio-tachado {
+            padding-right: 15px;
+            text-decoration: line-through;
+            color:  #ccc;
+        }
+
+        .descuento {
+            background-color: #ddd;
+        }
+
+        .precio {
+            font-family: 'Roboto Slab';
+            font-weight: 400;
+            margin-top: 10px;
+            font-size: 32px;
+        }
+
+        .envio {
+            padding: 10px;
+        }
+
+        .boton-comprar {
+            margin-top: 1em;
+            padding: 0.5em;
+            background-color: rgb(255, 136, 0);
+            border: 1px solid orange;
+            color: white;
+            width: 100%;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); /* Desplazamiento X, desplazamiento Y, desenfoque, color de sombra */
+            font-weight: 700;
+            font-size: 32px;
+
+        }
+
+        .clearfix {
+            display: flow-root;
+        }
+
+
+        h2.titulo-seccion {
+            font-family: 'Lobster';
+            margin-top: 40px;
+        }
+
+
+        .seccion-sinopsis {
+            font-family: 'Roboto';
+            margin-top: 30px;
+        }
+
+        .seccion-sinopsis em {
+
+            font-family: ;
+
+        }
+
+        .seccion-sinopsis strong {
+            font-family: 'Roboto Slab';
+            font-variant: small-caps;
+        }
+
+        .seccion-sinopsis b {
+            font-family: 'Roboto';
+
+        } 
+
+
+        .seccion-ficha-tecnica {
+
+        }
+
+        .seccion-ficha-tecnica ul {
+            list-style: none;
+            margin-left: -34px;
+        }
+
+        .seccion-ficha-tecnica li {
+
+        }
+
+        .seccion-ficha-tecnica .campo {
+            font-family: 'Roboto Slab';
+            font-weight: 700;
+            display: inline-block;
+            width: 136px;
+        }
+
+        .seccion-ficha-tecnica .dato {
+            text-align: left;
+            display: inline-block; /* Esto ayuda a respetar el min-width */
+            margin-left: 20px;
+        }
+
+
+
+        .seccion-ficha-autor {
+            margin-top: 3em;
+        }
+
+        .foto-ficha-autor {
+            float: left;
+            padding: 10px;
+        }
+
+        .seccion-ficha-autor p {
+
+        }
+
+        .seccion-ficha-autor em {
+
+        }
+
+        .seccion-ficha-autor strong {
+            font-family: 'Roboto Slab';
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-libro">La conjura de los necios</h1>
+        <div class="autor-libro">John Kennedy Toole</div>
+        <div class="editorial">Anagrama - 9788433920423 </div>
+        <section class="seccion-categorias">
+            <span class="categoria">Literatura</span>
+            <span class="categoria">Narrativa de bolsillo</span>
+            <span class="categoria">Narrativa extranjera</span>
+        </section>
+    </header>
+    <div class="clearfix">
+        <section class="seccion-portada">
+            <img src="https://imagessl3.casadellibro.com/a/l/s5/23/9788433920423.webp" width="229" height="334">
+        </section>
+        <section class="seccion-precio">
+            <div><span class="precio-tachado">13,90 €</span> <span class="descuento">-5% de dto. exclusivo web</span>
+            </div>
+            <div class="precio">13,20 €</div>
+            <div class="envio">Envío gratis a partir de 19,00 €</div>
+            <div class="boton-comprar">comprar</div>
+        </section>
+    </div>
+
+    <section class="seccion-sinopsis" title="Sinopsis">
+        <p>
+            <strong>La conjura de los necios</strong> es una disparatada, ácida e inteligentísima novela. Pero no sólo eso,
+            también es tremendamente divertida y amarga a la vez. La carcajada escapa por sí sola ante las situaciones
+            desproporcionadas de esta gran tragicomedia. Ignatius J. Reilly es, probablemente, uno de los mejores
+            personajes jamás creados y al que muchos no dudan en comparar con el Quijote. Ignatius es un incomprendido,
+            una persona de treinta y pocos años que vive en la casa de su madre y que lucha por lograr un mundo mejor
+            desde el interior de su habitación. Pero cruelmente se verá arrastrado a vagar por las calles de Nueva
+            Orleans en busca de trabajo, obligado a adentrarse en la sociedad, con la que mantiene una relación de
+            repulsión mutua, para poder sufragar los gastos causados por su madre en un accidente de coche mientras conducía ebria.
+        </p>
+        <p>
+            El autor, <b>John K. Toole, </b> una crítica clase media. Logra mantener el interés del
+            lector (incluso
+            mayor en una segunda lectura que en la primera) con un abanico de personajes a cuál más desagradable. No
+            deja títere con cabeza y, a través de la tortuosa y enrevesada personalidad de Ignatius, da un repaso a la
+            época que le tocó vivir en un tono de burla que contrasta con la triste visión de las vidas de los
+            personajes retratados. No encontramos únicamente una loca y angustiosa historia de crítica social, sino que
+            el argumento engancha desde el comienzo. Momento en el que, como dice su protagonista, Fortuna hace girar su
+            rueda hacia abajo y nunca sabemos cual es la desagradable sorpresa que nos depara el destino. A partir de
+            aquí, unas situaciones enganchan con otras, al igual que lo van haciendo los personajes, y se va formando
+            una enorme bola de nieve que terminará estallando al final de la novela.
+        </p>
+        <p>
+            Tras terminar <strong>La conjura de los necios</strong>, a sus 32 años, el autor intentó infructuosamente que la
+            publicasen.
+            Ello derivó en una profunda depresión que le condujo al suicidio. Gracias a la tenacidad e insistencia de su
+            madre hoy podemos disfrutar de esta deliciosa obra galardonada con el <b>Premio Pulitzer.</b>
+            También podemos
+            encontrar publicada La Biblia De Neón, novela escrita cuando el autor tenía 16 años.
+        </p>
+    </section>
+
+    <section class="seccion-ficha-tecnica">
+        <h2 class="titulo-seccion">Ficha técnica</h2>
+        <ul>
+            <li><span class="campo">Nº de páginas:</span> <span class="dato">368</span></li>
+            <li><span class="campo">Editorial:</span> <span class="dato">Anagrama</span></li>
+            <li><span class="campo">Idioma:</span> <span class="dato">Castellano</span></li>
+            <li><span class="campo">Encuadernación:</span> <span class="dato">Tapa blanda</span></li>
+            <li><span class="campo">ISBN:</span> <span class="dato">9788433930149</span></li>
+            <li><span class="campo">Año de edición:</span> <span class="dato">1982</span></li>
+            <li><span class="campo">Plaza de edición:</span> <span class="dato">Barcelona</span></li>
+            <li><span class="campo">Traductor:</span> <span class="dato">JOSÉ MANUEL ÁLVAREZ FLÓREZ</span></li>
+            <li><span class="campo">Fecha de lanzamiento:</span> <span class="dato">01/01/1982</span></li>
+            <li><span class="campo">Alto:</span> <span class="dato">20 cm</span></li>
+            <li><span class="campo">Ancho:</span> <span class="dato">13 cm</span></li>
+            <li><span class="campo">Peso:</span> <span class="dato">1180 gr</span></li>
+            <li><span class="campo">Colección:</span> <span class="dato">PANORAMA NARRATIVA (ANAGRAMA)</span></li>
+            <li><span class="campo">Número:</span> <span class="dato">14</span></li>
+        </ul>
+    </section>
+
+    <section class="seccion-ficha-autor">
+        <h2 class="titulo-seccion">Escrito por... John Kennedy Toole</h2>
+        <img class="foto-ficha-autor" src="https://imagessl.casadellibro.com/img/autores/toole.gif" width="99"
+            height="129">
+        <p><strong>John Kennedy Toole</strong> (Nueva Orleans, 1937-1969) estudió en la Universidad de Columbia,
+            donde obtuvo el
+            título de master en inglés, y fue profesor en la University of Southwestern Louisiana y en el Dominican
+            College de Nueva Orleans. Escribió su libro <strong><em>La conjura de los necios</em></strong> durante los dos años de
+            servicio
+            militar en Puerto Rico, pero nadie quiso publicárselo. Hundido en la depresión, se suicidó en 1969. Su
+            madre, Thelma Ducoing Toole, fue quien descubrió el manuscrito y años más tarde, en 1976, convenció al
+            editor Walker Percy para que lo editara. Su éxito fue inmediato y le convirtió en uno de los más
+            extraordinarios novelistas norteamericanos de todos los tiempos, recibiendo el Premio Pulitzer en 1981.
+        </p>
+    </section>
+</body>
+
+</html>

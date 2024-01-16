@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.header {    
+    background-color: #111111dc;    
+}
+
+.links {
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links-navbar a {
+    text-decoration: none;
+    color: #087021;
+}
+
+.first_container {
+    color: white;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 10px;
+    height: 30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.navbar {    
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-div {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    align-items: center;
+}
+
+.links-navbar {
+    width: 438px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logo2 {
+    width: 200px;
+}
+
+.fotoInput {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.imagen-superpuesta {
+    width: 100%;
+    height: auto;
+}
+
+.input-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+    display: inline-block;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    padding: 25px 50px 30px 50px;
+    border-radius: 3.2px;
+    background-color: rgb(255,255,255,.85);
+    width: 800px;
+}
+
+.input-superpuesto {
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #087021;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+.label-superpuesto {
+    color: black;
+}
+
+.titulo {
+    margin-top: 30px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cajas {
+    box-sizing: border-box;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.box {
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;    
+    width: 300px;
+    line-height: 2;
+    height: 220px;
+    box-shadow: rgba(38, 38, 38, 0.2) 0 4px 8px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    white-space: nowrap;
+    margin-bottom: 10%;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    color: #087021;
+}
+
+.boton {
+    position: absolute;
+    background-color: #087021;
+    height: 41px;
+    width: 71px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    color: white;
+}
