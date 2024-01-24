@@ -169,7 +169,7 @@ ul li {
 .boton {
     position: absolute;
     background-color: #087021;
-    height: 40.5px;
+    height: 41px;
     width: 71px;
     border: 0;
     border-radius: 0 5px 5px 0;
@@ -183,8 +183,6 @@ ul li {
 
 @media only screen and (max-width: 768px) {
     /* Estilos específicos para dispositivos móviles */
-
-   
     .header {
         width: 100%;
     }
