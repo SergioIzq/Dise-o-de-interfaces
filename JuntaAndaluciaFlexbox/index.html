@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
     <title>Junta de Andalucía</title>
 </head>
 
@@ -30,6 +31,9 @@
             <a href="#"><img src="img/logoJunta.png" class="logo"></a>
             <img src="img/junta.png" class="logo2"></img>
         </div>
+        <div class="hamburguesa">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="links-navbar">
             <a href="#">Estudiar</a>
             <a href="#">Trabajar</a>
@@ -44,12 +48,15 @@
     <div class="fotoInput">
         <img src="img/fotoFondo.png" class="imagen-superpuesta">
         <div class="input-container">
-            <label for="miInput" class="label-superpuesto"><strong>¿En qué podemos ayudarte?</strong></label>
-            <input id="miInput" class="input-superpuesto" type="text" placeholder="BOJA">
-            <button style="background-color: aliceblue;" class="boton"><span class="material-symbols-outlined">
-                    search
-                </span></button>
-
+            <form>
+                <label for="miInput" class="label-superpuesto"><strong>¿En qué podemos ayudarte?</strong></label>
+                <input id="miInput" class="input-superpuesto" type="text" placeholder="BOJA">
+                <button type="button" class="boton">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </form>
         </div>
     </div>
     <div class="titulo">
@@ -59,34 +66,33 @@
         <div class="box">
             <h3>Estudiar</h3>
             <ul>
-                <li>Becas de la Junta de Andalucía</li>
-                <li>PASEN</li>
-                <li>Universidad: Distrito Único Andaluz</li>
+                <li><a href="#">Becas de la Junta de Andalucía</a></li>
+                <li><a href="#">PASEN</a></li>
+                <li><a href="#">Universidad: Distrito Único Andaluz</a></li>
             </ul>
         </div>
         <div class="box">
             <h3>Trabajar</h3>
             <ul>
-                <li>Renovar demanda de empleo</li>
-                <li>Ofertas de empleo</li>
-                <li>Ofertas Virtual FPE</li>
+                <li><a href="#">Renovar demanda de empleo</a></li>
+                <li><a href="#">Ofertas de empleo</a></li>
+                <li><a href="#">Ofertas Virtual FPE</a></li>
             </ul>
         </div>
         <div class="box">
             <h3>Tu Salud</h3>
             <ul>
-                <li>Cita en centros sanitarios</li>
-                <li>Salud Responde</li>
-                <li>Vacunación gripe</li>
+                <li><a href="#">Cita en centros sanitarios</a></li>
+                <li><a href="#">Salud Responde</a></li>
+                <li><a href="#">Vacunación gripe</a></li>
             </ul>
         </div>
         <div class="box">
             <h3>Vivienda y consumo</h3>
-            <hr>
             <ul>
-                <li>Bono alquiler joven</li>
-                <li>Ayudas Plan EcoVivienda</li>
-                <li>Hojas de quejas y reclamaciones</li>
+                <li><a href="#">Bono alquiler joven</a></li>
+                <li><a href="#">Ayudas Plan EcoVivienda</a></li>
+                <li><a href="#">Hojas de quejas y reclamaciones</a></li>
             </ul>
         </div>
     </div>

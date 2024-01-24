@@ -4,8 +4,8 @@
     font-family: 'Source Sans 3', sans-serif;
 }
 
-.header {    
-    background-color: #111111dc;    
+.header {
+    background-color: #111111dc;
 }
 
 .links {
@@ -40,7 +40,7 @@
     padding-right: 10px;
 }
 
-.navbar {    
+.navbar {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -95,9 +95,9 @@
     z-index: 1;
     left: 50%;
     top: 50%;
-    padding: 25px 50px 30px 50px;
+    padding: 50px 25px 50px 100px;
     border-radius: 3.2px;
-    background-color: rgb(255,255,255,.85);
+    background-color: rgb(255, 255, 255, .85);
     width: 800px;
 }
 
@@ -108,8 +108,7 @@
     border: 1px solid #087021;
     border-radius: 5px 0 0 5px;
     background-color: #fff;
-    -webkit-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
 }
 
 .label-superpuesto {
@@ -139,7 +138,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     width: 300px;
     line-height: 2;
     height: 220px;
@@ -149,6 +148,15 @@
     white-space: nowrap;
     margin-bottom: 10%;
 }
+
+.box ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: #087021; /* Aplica el color deseado para los enlaces */
+  }
+  
+  .box ul li a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el mouse (hover) */
+  }
 
 ul {
     list-style: none;
@@ -161,9 +169,79 @@ ul li {
 .boton {
     position: absolute;
     background-color: #087021;
-    height: 41px;
+    height: 40.5px;
     width: 71px;
     border: 0;
     border-radius: 0 5px 5px 0;
-    color: white;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.hamburguesa {
+    display: none; /* Oculta por defecto en pantallas más grandes */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Estilos específicos para dispositivos móviles */
+
+   
+    .header {
+        width: 100%;
+    }
+
+    .first_container {
+        width: 90%;
+    }
+
+    .navbar {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .links-navbar {
+        display: none;
+    }
+
+    .logo-div {
+        width: 50%;
+    }
+
+    .hamburguesa {
+        display: flex; /* Muestra en pantallas más pequeñas */
+        font-size: 30px; /* Ajusta el tamaño del ícono según tu preferencia */
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+
+    }
+
+    .links {
+        gap: 10px;
+    }
+
+    .input-container {
+        width: 70%;        
+        padding: 20px 20px 20px 20px;
+    }
+
+    .boton {
+        width: 14%;
+        height: 40%;        
+    }
+    
+    .titulo {
+        width: 78%;
+    }
+
+    .cajas {
+        flex-direction: column;
+        gap: 20px;
+        width: 70%;
+    }
+
+    .box {
+        width: 100%; /* Ocupa todo el ancho en pantallas más pequeñas */
+    }
+    
 }
