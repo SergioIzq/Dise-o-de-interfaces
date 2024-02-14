@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page - Sergio Izquierdo</title>
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Roboto';
+        }
+
+        .landing-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .landing-header h1 {
+            font-size: 3rem;
+        }
+
+        .landing-feature {
+            background-color: #ffffff;
+            padding: 60px 0;
+        }
+
+        .landing-feature h2 {
+            color: #007bff;
+        }
+
+        .landing-footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .logo {
+            width: 100px;
+            /* Ancho de las imágenes de los logos */
+            height: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .html {
+            width: 140px;
+        }
+
+        .js {
+            width: 120px;
+        }
+
+        .accordion-body {
+            text-align: center;
+        }
+
+        .fotos {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .boton-submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+
+        h2 {
+            color: #007bff;
+        }
+
+        .col-lg-8 {
+            margin-top: 5%;
+        }
+
+        .landing-faq {
+            margin-top: 5%;
+        }
+
+        .col-lg-6 {
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+    <header class="landing-header text-center">
+        <div class="container">
+            <h1>Bienvenido a la Landing Page de Sergio Izquierdo</h1>
+            <p>Mis servicios de desarrollo web a tu disposición.</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <section class="landing-feature">
+        <div class="container mx-auto">
+            <div class="col justify-content-center">
+                <div class="col-lg-6 mx-auto">
+                    <h2>¿Qué ofrezco?</h2>
+                    <p>En mi empresa, ofrezco una amplia gama de servicios de desarrollo web, desde diseño de sitios web
+                        hasta desarrollo de aplicaciones web personalizadas.</p>
+                    <p>Cuento con un equipo altamente capacitado y comprometido para llevar tus ideas al mundo digital
+                        de manera eficiente y profesional.</p>
+                </div>
+                <div class="col-lg-6 mx-auto">
+                    <h2>Beneficios</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Desarrollo web personalizado</li>
+                        <li class="list-group-item">Diseño responsivo</li>
+                        <li class="list-group-item">Optimización para motores de búsqueda (SEO)</li>
+                        <li class="list-group-item">Soporte continuo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section class="landing-faq">
+        <div class="container">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Qué tecnologías utilizo en mis proyectos?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>He utilizado muchas tecnologías a lo largo de mi carrera, pero mis favoritas son:</p>
+                            <div class="fotos">
+                                <img src="logo_html.png" alt="HTML" class="logo html">
+                                <img src="logo_css.png" alt="CSS" class="logo">
+                                <img src="logo_js.png" alt="JavaScript" class="logo js">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Dónde estoy ubicado?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Estoy ubicado en Sevilla Este.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cuál es el coste de mis servicios?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            El coste de mis servicios puede variar dependiendo de los requisitos del proyecto. Para
+                            obtener un presupuesto personalizado, te invito a ponerte en contacto conmigo a través del
+                            formulario de contacto.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="landing-form">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Contacto</h2>
+                    <p>Para obtener más información o para solicitar mis servicios, por favor completa el siguiente
+                        formulario y me pondré en contacto contigo lo antes posible.</p>
+                    <form>
+                        <div class="mb-3">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Correo electrónico"
+                                    aria-label="Correo electrónico" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefono">
+                        </div>
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="direccion">
+                        </div>
+                        <div class="boton-submit">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="landing-footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Sergio Izquierdo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
