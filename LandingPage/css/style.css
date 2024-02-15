@@ -1,0 +1,98 @@
+        /* Estilos personalizados */
+        body {
+            font-family: 'Roboto';
+            background-color: #205b5eec;
+            color: #fff;
+        }
+
+        .landing-header {
+            background-color: #45382eb6;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .landing-header h1 {
+            font-size: 3rem;
+        }
+
+        .landing-feature {
+            padding: 60px 0;
+        }
+
+        .landing-feature h2 {
+            color: #fff;
+        }
+
+        .landing-footer {
+            background-color: #45382eb6;
+            color: #fff;
+            padding: 30px 0;
+        }
+
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .html {
+            width: 140px;
+        }
+
+        .js {
+            width: 120px;
+        }
+
+        .accordion-body {
+            text-align: center;
+        }
+
+        .fotos {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .boton-submit {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5%;
+            margin-top: 5%;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 5%;
+            font-family: 'Roboto Serif', serif;
+        }
+
+        h1 {
+            font-family: 'Roboto Serif', serif; 
+        }
+
+        .col-lg-6 {
+            margin-top: 3%;
+        }
+
+        .landing-faq {
+            /* Espacio en la parte superior */
+            margin-top: 3.5%;
+        }
+
+        .col-lg-8 {
+            margin-top: 5%;
+        }
+
+        .btn {
+            background-color: #45382eb6;
+            border-color: #45382eb6;
+        }
+
+        .btn:hover {
+            background-color: #484949ec;
+            border-color: #6d6d6dec;
+        }
